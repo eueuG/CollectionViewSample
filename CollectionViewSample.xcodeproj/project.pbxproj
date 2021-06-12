@@ -82,10 +82,10 @@
 			isa = PBXGroup;
 			children = (
 				0C041EED2674F689000F55B5 /* ColorSampleView.storyboard */,
-				0C041EF92674FB93000F55B5 /* ColorSampleNextView.storyboard */,
-				0C041EFC2674FC37000F55B5 /* ColorSampleNextViewController.swift */,
 				0C041EF22674F6D9000F55B5 /* ColorSampleViewController.swift */,
 				0C041EF62674F891000F55B5 /* ColorSampleCollectionViewCell.swift */,
+				0C041EF92674FB93000F55B5 /* ColorSampleNextView.storyboard */,
+				0C041EFC2674FC37000F55B5 /* ColorSampleNextViewController.swift */,
 			);
 			path = ColerSample;
 			sourceTree = "<group>";
