@@ -27,7 +27,10 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftz-ic-huO">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
-                                                        <state key="normal" title="Button"/>
+                                                        <state key="normal" title="ColorSampleView"/>
+                                                        <connections>
+                                                            <segue destination="00A-GC-NkO" kind="show" id="oVz-Gb-J7c"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -67,6 +70,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1021.7391304347827" y="93.75"/>
+        </scene>
+        <!--ColorSampleView-->
+        <scene sceneID="3FA-7m-6Fs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ColorSampleView" id="00A-GC-NkO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="PYN-Ab-h7C"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fmP-Dp-LP3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1588" y="-109"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="93a-9h-uJt">
