@@ -62,6 +62,7 @@
                                         <connections>
                                             <outlet property="label" destination="5gb-ts-Cxf" id="EzZ-gx-EZa"/>
                                             <outlet property="name" destination="fud-pM-Z6G" id="bzH-ge-vv4"/>
+                                            <segue destination="eaF-w1-cvz" kind="show" identifier="Segue" id="TYg-fe-RnW"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -80,6 +81,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2re-HX-ZPr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="161" y="131"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="WQY-vy-xEz">
+            <objects>
+                <viewControllerPlaceholder id="eaF-w1-cvz" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="SLR-Bd-Qte"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bT7-dT-YS9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="121"/>
         </scene>
     </scenes>
     <resources>
