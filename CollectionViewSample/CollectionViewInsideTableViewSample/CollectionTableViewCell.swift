@@ -16,10 +16,12 @@ final class CollectionTableViewCell: UITableViewCell {
     static func nib() -> UINib {
         return UINib(nibName: CollectionTableViewCell.toString, bundle: nil)
     }
+    
     private var models = [Model]()
     
     @IBOutlet private weak var collectionView: UICollectionView!
     
+    //awakeFromNibがよくわからん。viewDidLoadみたいなもんかな
     override func awakeFromNib() {
         super.awakeFromNib()
         collectionView.delegate = self
@@ -31,6 +33,7 @@ final class CollectionTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    //なんかモデル渡す関数
     func configure(with models: [Model]) {
         self.models = models
         collectionView.reloadData()
