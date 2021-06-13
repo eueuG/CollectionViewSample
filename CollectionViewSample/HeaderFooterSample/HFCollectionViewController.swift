@@ -23,6 +23,11 @@ class HFCollectionViewController: UIViewController, UICollectionViewDelegate {
         //collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.register(HFCollectionViewCell.nib(),
                                  forCellWithReuseIdentifier: HFCollectionViewCell.id)
+        
+        collectionView?.register(HeaderCollectionReusableView.self,
+                                         forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+                                         withReuseIdentifier: HeaderCollectionReusableView.id)
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.backgroundColor = .white
@@ -38,7 +43,9 @@ class HFCollectionViewController: UIViewController, UICollectionViewDelegate {
 //    }
 }
 extension HFCollectionViewController: UICollectionViewDelegateFlowLayout {
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: view.frame.size.width, height: 200)
+    }
 }
 
 
@@ -51,6 +58,14 @@ extension HFCollectionViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HFCollectionViewCell.id, for: indexPath) as! HFCollectionViewCell
         cell.configure()
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader,
+                                                                     withReuseIdentifier: HeaderCollectionReusableView.id,
+                                                                     for: indexPath) as! HeaderCollectionReusableView
+        header.configure()
+        return header
     }
     
     

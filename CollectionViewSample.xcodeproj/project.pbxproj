@@ -25,6 +25,7 @@
 		0C488BC426759E4000372188 /* HFCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C488BC326759E4000372188 /* HFCollectionViewController.swift */; };
 		0C488BC726759F2000372188 /* HFCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C488BC626759F2000372188 /* HFCollectionViewCell.swift */; };
 		0C488BCB2675A31E00372188 /* HFCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C488BCA2675A31E00372188 /* HFCollectionViewCell.xib */; };
+		0C488BCE2675A6CA00372188 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C488BCD2675A6C900372188 /* HeaderCollectionReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		0C488BC326759E4000372188 /* HFCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFCollectionViewController.swift; sourceTree = "<group>"; };
 		0C488BC626759F2000372188 /* HFCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFCollectionViewCell.swift; sourceTree = "<group>"; };
 		0C488BCA2675A31E00372188 /* HFCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HFCollectionViewCell.xib; sourceTree = "<group>"; };
+		0C488BCD2675A6C900372188 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				0C488BC026759E2700372188 /* HFCollectionView.storyboard */,
 				0C488BC326759E4000372188 /* HFCollectionViewController.swift */,
 				0C488BC626759F2000372188 /* HFCollectionViewCell.swift */,
+				0C488BCD2675A6C900372188 /* HeaderCollectionReusableView.swift */,
 				0C488BCA2675A31E00372188 /* HFCollectionViewCell.xib */,
 			);
 			path = HeaderFooterSample;
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C041EDD2674F001000F55B5 /* ViewController.swift in Sources */,
+				0C488BCE2675A6CA00372188 /* HeaderCollectionReusableView.swift in Sources */,
 				0C488BBD26758C2900372188 /* BasicCollectionViewCell.swift in Sources */,
 				0C488BC726759F2000372188 /* HFCollectionViewCell.swift in Sources */,
 				0C041ED92674F001000F55B5 /* AppDelegate.swift in Sources */,
