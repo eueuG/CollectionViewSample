@@ -22,14 +22,21 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xbJ-EO-Bba" userLabel="ContentsView">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="e57-kO-63w">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="e57-kO-63w">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftz-ic-huO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="387"/>
                                                         <state key="normal" title="ColorSampleView"/>
                                                         <connections>
                                                             <segue destination="00A-GC-NkO" kind="show" id="oVz-Gb-J7c"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJf-NO-95x">
+                                                        <rect key="frame" x="0.0" y="387" width="414" height="387"/>
+                                                        <state key="normal" title="BasicCollectionView"/>
+                                                        <connections>
+                                                            <segue destination="Dwt-4j-GvE" kind="show" id="s1U-Rb-ezj"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -80,6 +87,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fmP-Dp-LP3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1588" y="-109"/>
+        </scene>
+        <!--BasicCollectionView-->
+        <scene sceneID="zbV-xx-dnZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BasicCollectionView" id="Dwt-4j-GvE" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="PxT-Uf-MYs"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Mg-3v-dbe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1679" y="156"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="93a-9h-uJt">
