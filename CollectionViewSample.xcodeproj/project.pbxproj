@@ -24,6 +24,7 @@
 		0C488BC126759E2800372188 /* HFCollectionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C488BC026759E2700372188 /* HFCollectionView.storyboard */; };
 		0C488BC426759E4000372188 /* HFCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C488BC326759E4000372188 /* HFCollectionViewController.swift */; };
 		0C488BC726759F2000372188 /* HFCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C488BC626759F2000372188 /* HFCollectionViewCell.swift */; };
+		0C488BCB2675A31E00372188 /* HFCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C488BCA2675A31E00372188 /* HFCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		0C488BC026759E2700372188 /* HFCollectionView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HFCollectionView.storyboard; sourceTree = "<group>"; };
 		0C488BC326759E4000372188 /* HFCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFCollectionViewController.swift; sourceTree = "<group>"; };
 		0C488BC626759F2000372188 /* HFCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFCollectionViewCell.swift; sourceTree = "<group>"; };
+		0C488BCA2675A31E00372188 /* HFCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HFCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				0C488BC026759E2700372188 /* HFCollectionView.storyboard */,
 				0C488BC326759E4000372188 /* HFCollectionViewController.swift */,
 				0C488BC626759F2000372188 /* HFCollectionViewCell.swift */,
+				0C488BCA2675A31E00372188 /* HFCollectionViewCell.xib */,
 			);
 			path = HeaderFooterSample;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				0C488BBA26758A5B00372188 /* BasicCollectionView.storyboard in Resources */,
 				0C041EE22674F006000F55B5 /* Assets.xcassets in Resources */,
 				0C041EEE2674F68A000F55B5 /* ColorSampleView.storyboard in Resources */,
+				0C488BCB2675A31E00372188 /* HFCollectionViewCell.xib in Resources */,
 				0C041EE02674F001000F55B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
