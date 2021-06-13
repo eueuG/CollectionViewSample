@@ -7,8 +7,10 @@
 
 import UIKit
 
-class ColerSampleViewController: UICollectionViewController {
+class ColorSampleViewController: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource {
     
+    @IBOutlet weak var collectionView: UICollectionView!
+
     let colors: [UIColor] = [UIColor.black, UIColor.blue, UIColor.brown, UIColor.cyan, UIColor.darkGray, UIColor.darkText, UIColor.gray, UIColor.green, UIColor.lightGray, UIColor.orange, UIColor.red]
     
     let colorNames: [String] = ["black", "blue", "brown", "cyan", "darkGray", "darkText", "gray", "green", "lightGray", "orange", "red"]
@@ -19,13 +21,15 @@ class ColerSampleViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        collectionView.delegate = self
+        collectionView.dataSource = self
     }
     
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
             return colors.count
         }
     
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             // Identifierが"CollectionViewCell"でCollectionViewCellというクラスのcellを取得
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ColorSampleCell", for: indexPath) as! ColorSampleCollectionViewCell
 
@@ -39,7 +43,7 @@ class ColerSampleViewController: UICollectionViewController {
     
     // cell選択時に呼ばれる関数
         // 画面遷移先に渡すデータをここで格納する
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         giveColor = colors[indexPath.item]
         giveColorName = colorNames[indexPath.item]
         // Identifierが"Segue"のSegueを使って画面遷移する関数

@@ -77,15 +77,18 @@
                             <constraint firstItem="ms5-Tb-edE" firstAttribute="bottom" secondItem="kPk-C8-m1p" secondAttribute="bottom" id="oCB-Xh-GKH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="kPk-C8-m1p" id="hlQ-IM-tFs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2re-HX-ZPr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="161" y="131"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--ColorSampleNextView-->
         <scene sceneID="WQY-vy-xEz">
             <objects>
-                <viewControllerPlaceholder id="eaF-w1-cvz" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="ColorSampleNextView" id="eaF-w1-cvz" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="SLR-Bd-Qte"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bT7-dT-YS9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
