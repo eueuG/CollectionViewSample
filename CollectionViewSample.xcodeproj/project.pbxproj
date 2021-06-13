@@ -27,6 +27,9 @@
 		0C488BCB2675A31E00372188 /* HFCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C488BCA2675A31E00372188 /* HFCollectionViewCell.xib */; };
 		0C488BCE2675A6CA00372188 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C488BCD2675A6C900372188 /* HeaderCollectionReusableView.swift */; };
 		0C488BD12675A86C00372188 /* FooterCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C488BD02675A86C00372188 /* FooterCollectionReusableView.swift */; };
+		0C488BD72675CD1300372188 /* GridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C488BD62675CD1300372188 /* GridViewCell.swift */; };
+		0C488BDB2675CD7500372188 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C488BDA2675CD7500372188 /* GridViewController.swift */; };
+		0C488BDF2675CD9200372188 /* GridView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C488BDE2675CD9200372188 /* GridView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		0C488BCA2675A31E00372188 /* HFCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HFCollectionViewCell.xib; sourceTree = "<group>"; };
 		0C488BCD2675A6C900372188 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		0C488BD02675A86C00372188 /* FooterCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterCollectionReusableView.swift; sourceTree = "<group>"; };
+		0C488BD62675CD1300372188 /* GridViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewCell.swift; sourceTree = "<group>"; };
+		0C488BDA2675CD7500372188 /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
+		0C488BDE2675CD9200372188 /* GridView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GridView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,7 @@
 				0C041EF02674F6AE000F55B5 /* ColerSample */,
 				0C488BB426758A1E00372188 /* BasicCollectionView */,
 				0C488BBF26759DF100372188 /* HeaderFooterSample */,
+				0C488BD52675CCD000372188 /* GridViewSample */,
 				0C041EE12674F006000F55B5 /* Assets.xcassets */,
 				0C041EE32674F006000F55B5 /* LaunchScreen.storyboard */,
 				0C041EE62674F006000F55B5 /* Info.plist */,
@@ -131,6 +138,16 @@
 				0C488BD02675A86C00372188 /* FooterCollectionReusableView.swift */,
 			);
 			path = HeaderFooterSample;
+			sourceTree = "<group>";
+		};
+		0C488BD52675CCD000372188 /* GridViewSample */ = {
+			isa = PBXGroup;
+			children = (
+				0C488BDE2675CD9200372188 /* GridView.storyboard */,
+				0C488BDA2675CD7500372188 /* GridViewController.swift */,
+				0C488BD62675CD1300372188 /* GridViewCell.swift */,
+			);
+			path = GridViewSample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +209,7 @@
 			files = (
 				0C041EE52674F006000F55B5 /* LaunchScreen.storyboard in Resources */,
 				0C041EFA2674FB93000F55B5 /* ColorSampleNextView.storyboard in Resources */,
+				0C488BDF2675CD9200372188 /* GridView.storyboard in Resources */,
 				0C488BC126759E2800372188 /* HFCollectionView.storyboard in Resources */,
 				0C488BBA26758A5B00372188 /* BasicCollectionView.storyboard in Resources */,
 				0C041EE22674F006000F55B5 /* Assets.xcassets in Resources */,
@@ -216,7 +234,9 @@
 				0C041EF72674F891000F55B5 /* ColorSampleCollectionViewCell.swift in Sources */,
 				0C041EF32674F6D9000F55B5 /* ColorSampleViewController.swift in Sources */,
 				0C041EDB2674F001000F55B5 /* SceneDelegate.swift in Sources */,
+				0C488BD72675CD1300372188 /* GridViewCell.swift in Sources */,
 				0C488BB626758A4800372188 /* BasicCollectionViewController.swift in Sources */,
+				0C488BDB2675CD7500372188 /* GridViewController.swift in Sources */,
 				0C488BC426759E4000372188 /* HFCollectionViewController.swift in Sources */,
 				0C488BD12675A86C00372188 /* FooterCollectionReusableView.swift in Sources */,
 				0C041EFD2674FC37000F55B5 /* ColorSampleNextViewController.swift in Sources */,
