@@ -24,6 +24,7 @@ class HFCollectionViewController: UIViewController {
         collectionView.register(HFCollectionViewCell.nib(),
                                  forCellWithReuseIdentifier: HFCollectionViewCell.id)
         
+        //HeaderFooterViewを登録
         collectionView?.register(HeaderCollectionReusableView.self,
                                          forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
                                          withReuseIdentifier: HeaderCollectionReusableView.id)
@@ -47,6 +48,7 @@ class HFCollectionViewController: UIViewController {
 }
 extension HFCollectionViewController: UICollectionViewDelegateFlowLayout {
     
+    //HeaderFooterの大きさ設定
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         return CGSize(width: view.frame.size.width, height: 200)
     }
