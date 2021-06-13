@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HFCollectionViewController: UIViewController, UICollectionViewDelegate {
+class HFCollectionViewController: UIViewController {
     
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -27,6 +27,9 @@ class HFCollectionViewController: UIViewController, UICollectionViewDelegate {
         collectionView?.register(HeaderCollectionReusableView.self,
                                          forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
                                          withReuseIdentifier: HeaderCollectionReusableView.id)
+        collectionView?.register(FooterCollectionReusableView.self,
+                                         forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter,
+                                         withReuseIdentifier: FooterCollectionReusableView.id)
         
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -43,7 +46,12 @@ class HFCollectionViewController: UIViewController, UICollectionViewDelegate {
 //    }
 }
 extension HFCollectionViewController: UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: view.frame.size.width, height: 200)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
         return CGSize(width: view.frame.size.width, height: 200)
     }
 }
@@ -61,12 +69,24 @@ extension HFCollectionViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader,
-                                                                     withReuseIdentifier: HeaderCollectionReusableView.id,
-                                                                     for: indexPath) as! HeaderCollectionReusableView
-        header.configure()
-        return header
+        if kind == UICollectionView.elementKindSectionFooter {
+            let footer = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionFooter,
+                                                                         withReuseIdentifier: FooterCollectionReusableView.id,
+                                                                         for: indexPath) as! FooterCollectionReusableView
+            footer.configure()
+            return footer
+        } else {
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader,
+                                                                         withReuseIdentifier: HeaderCollectionReusableView.id,
+                                                                         for: indexPath) as! HeaderCollectionReusableView
+            header.configure()
+            return header
+        }
     }
-    
-    
+}
+
+extension HFCollectionViewController: UICollectionViewDelegate {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 5
+    }
 }

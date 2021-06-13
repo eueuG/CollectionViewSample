@@ -26,6 +26,7 @@
 		0C488BC726759F2000372188 /* HFCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C488BC626759F2000372188 /* HFCollectionViewCell.swift */; };
 		0C488BCB2675A31E00372188 /* HFCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C488BCA2675A31E00372188 /* HFCollectionViewCell.xib */; };
 		0C488BCE2675A6CA00372188 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C488BCD2675A6C900372188 /* HeaderCollectionReusableView.swift */; };
+		0C488BD12675A86C00372188 /* FooterCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C488BD02675A86C00372188 /* FooterCollectionReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		0C488BC626759F2000372188 /* HFCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFCollectionViewCell.swift; sourceTree = "<group>"; };
 		0C488BCA2675A31E00372188 /* HFCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HFCollectionViewCell.xib; sourceTree = "<group>"; };
 		0C488BCD2675A6C900372188 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		0C488BD02675A86C00372188 /* FooterCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterCollectionReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,11 +123,12 @@
 		0C488BBF26759DF100372188 /* HeaderFooterSample */ = {
 			isa = PBXGroup;
 			children = (
-				0C488BC026759E2700372188 /* HFCollectionView.storyboard */,
 				0C488BC326759E4000372188 /* HFCollectionViewController.swift */,
+				0C488BC026759E2700372188 /* HFCollectionView.storyboard */,
 				0C488BC626759F2000372188 /* HFCollectionViewCell.swift */,
-				0C488BCD2675A6C900372188 /* HeaderCollectionReusableView.swift */,
 				0C488BCA2675A31E00372188 /* HFCollectionViewCell.xib */,
+				0C488BCD2675A6C900372188 /* HeaderCollectionReusableView.swift */,
+				0C488BD02675A86C00372188 /* FooterCollectionReusableView.swift */,
 			);
 			path = HeaderFooterSample;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				0C041EDB2674F001000F55B5 /* SceneDelegate.swift in Sources */,
 				0C488BB626758A4800372188 /* BasicCollectionViewController.swift in Sources */,
 				0C488BC426759E4000372188 /* HFCollectionViewController.swift in Sources */,
+				0C488BD12675A86C00372188 /* FooterCollectionReusableView.swift in Sources */,
 				0C041EFD2674FC37000F55B5 /* ColorSampleNextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
