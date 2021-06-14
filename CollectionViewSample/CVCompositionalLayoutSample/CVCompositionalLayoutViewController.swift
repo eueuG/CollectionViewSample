@@ -70,7 +70,7 @@ extension CVCompositionalLayoutViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "compocell", for: indexPath)
         cell.backgroundColor = (indexPath.row % 2 == 0 ? .blue : .red)
         return cell
     }
