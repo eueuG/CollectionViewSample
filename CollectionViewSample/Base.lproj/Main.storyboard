@@ -26,38 +26,45 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftz-ic-huO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="155"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="129"/>
                                                         <state key="normal" title="ColorSampleView"/>
                                                         <connections>
                                                             <segue destination="00A-GC-NkO" kind="show" id="oVz-Gb-J7c"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJf-NO-95x">
-                                                        <rect key="frame" x="0.0" y="155" width="414" height="154.5"/>
+                                                        <rect key="frame" x="0.0" y="129" width="414" height="129"/>
                                                         <state key="normal" title="BasicCollectionView"/>
                                                         <connections>
                                                             <segue destination="Dwt-4j-GvE" kind="show" id="s1U-Rb-ezj"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YiE-jR-ja1">
-                                                        <rect key="frame" x="0.0" y="309.5" width="414" height="155"/>
+                                                        <rect key="frame" x="0.0" y="258" width="414" height="129"/>
                                                         <state key="normal" title="HFCollectionViewCell"/>
                                                         <connections>
                                                             <segue destination="U0U-Xz-3hB" kind="show" id="Ym5-gj-1eK"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xn9-aw-bLz">
-                                                        <rect key="frame" x="0.0" y="464.5" width="414" height="154.5"/>
+                                                        <rect key="frame" x="0.0" y="387" width="414" height="129"/>
                                                         <state key="normal" title="GridViewSample"/>
                                                         <connections>
                                                             <segue destination="6G0-jh-NAl" kind="show" id="aqW-fl-cZ6"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xif-Oi-igS">
-                                                        <rect key="frame" x="0.0" y="619" width="414" height="155"/>
+                                                        <rect key="frame" x="0.0" y="516" width="414" height="129"/>
                                                         <state key="normal" title="TableViewの中にCollectionView"/>
                                                         <connections>
                                                             <segue destination="21g-zz-3O7" kind="show" id="tp8-Yy-gXB"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qN-4n-GJe">
+                                                        <rect key="frame" x="0.0" y="645" width="414" height="129"/>
+                                                        <state key="normal" title="CVCompositionalLayoutSample"/>
+                                                        <connections>
+                                                            <segue destination="vbd-9S-PIU" kind="show" id="7GX-Mc-e6x"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -148,6 +155,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZt-nt-iQQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1686" y="288"/>
+        </scene>
+        <!--CVCompositionalLayoutSample-->
+        <scene sceneID="31c-b3-y5P">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CVCompositionalLayoutSample" id="vbd-9S-PIU" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="oOX-Ph-yr9"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iM6-dm-hdZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1672" y="420"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="93a-9h-uJt">

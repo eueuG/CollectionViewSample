@@ -25,6 +25,9 @@
 		0C46B41F2675D92A00A0B5A6 /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C46B41E2675D92A00A0B5A6 /* CollectionTableViewCell.xib */; };
 		0C46B4222675D97300A0B5A6 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C46B4212675D97300A0B5A6 /* CollectionViewCell.xib */; };
 		0C46B4252675DB9600A0B5A6 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C46B4242675DB9600A0B5A6 /* CollectionViewCell.swift */; };
+		0C46B42A2677233C00A0B5A6 /* CVFlowLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C46B4292677233C00A0B5A6 /* CVFlowLayoutViewController.swift */; };
+		0C46B42E2677236100A0B5A6 /* CVCompositionalLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C46B42D2677236100A0B5A6 /* CVCompositionalLayoutViewController.swift */; };
+		0C46B4322677239E00A0B5A6 /* CVCompositionalLayoutSample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C46B4312677239E00A0B5A6 /* CVCompositionalLayoutSample.storyboard */; };
 		0C488BB626758A4800372188 /* BasicCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C488BB526758A4800372188 /* BasicCollectionViewController.swift */; };
 		0C488BBA26758A5B00372188 /* BasicCollectionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C488BB926758A5B00372188 /* BasicCollectionView.storyboard */; };
 		0C488BBD26758C2900372188 /* BasicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C488BBC26758C2900372188 /* BasicCollectionViewCell.swift */; };
@@ -60,6 +63,9 @@
 		0C46B41E2675D92A00A0B5A6 /* CollectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionTableViewCell.xib; sourceTree = "<group>"; };
 		0C46B4212675D97300A0B5A6 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		0C46B4242675DB9600A0B5A6 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		0C46B4292677233C00A0B5A6 /* CVFlowLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVFlowLayoutViewController.swift; sourceTree = "<group>"; };
+		0C46B42D2677236100A0B5A6 /* CVCompositionalLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVCompositionalLayoutViewController.swift; sourceTree = "<group>"; };
+		0C46B4312677239E00A0B5A6 /* CVCompositionalLayoutSample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CVCompositionalLayoutSample.storyboard; sourceTree = "<group>"; };
 		0C488BB526758A4800372188 /* BasicCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCollectionViewController.swift; sourceTree = "<group>"; };
 		0C488BB926758A5B00372188 /* BasicCollectionView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BasicCollectionView.storyboard; sourceTree = "<group>"; };
 		0C488BBC26758C2900372188 /* BasicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -113,6 +119,7 @@
 				0C488BBF26759DF100372188 /* HeaderFooterSample */,
 				0C488BD52675CCD000372188 /* GridViewSample */,
 				0C46B4112675D73E00A0B5A6 /* CollectionViewInsideTableViewSample */,
+				0C46B428267722CE00A0B5A6 /* CVCompositionalLayoutSample */,
 				0C041EE12674F006000F55B5 /* Assets.xcassets */,
 				0C041EE32674F006000F55B5 /* LaunchScreen.storyboard */,
 				0C041EE62674F006000F55B5 /* Info.plist */,
@@ -144,6 +151,16 @@
 				0C46B4212675D97300A0B5A6 /* CollectionViewCell.xib */,
 			);
 			path = CollectionViewInsideTableViewSample;
+			sourceTree = "<group>";
+		};
+		0C46B428267722CE00A0B5A6 /* CVCompositionalLayoutSample */ = {
+			isa = PBXGroup;
+			children = (
+				0C46B4292677233C00A0B5A6 /* CVFlowLayoutViewController.swift */,
+				0C46B42D2677236100A0B5A6 /* CVCompositionalLayoutViewController.swift */,
+				0C46B4312677239E00A0B5A6 /* CVCompositionalLayoutSample.storyboard */,
+			);
+			path = CVCompositionalLayoutSample;
 			sourceTree = "<group>";
 		};
 		0C488BB426758A1E00372188 /* BasicCollectionView */ = {
@@ -247,6 +264,7 @@
 				0C041EEE2674F68A000F55B5 /* ColorSampleView.storyboard in Resources */,
 				0C488BCB2675A31E00372188 /* HFCollectionViewCell.xib in Resources */,
 				0C46B4132675D7F500A0B5A6 /* CVInsideTVViewController.storyboard in Resources */,
+				0C46B4322677239E00A0B5A6 /* CVCompositionalLayoutSample.storyboard in Resources */,
 				0C041EE02674F001000F55B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C041EDD2674F001000F55B5 /* ViewController.swift in Sources */,
+				0C46B42A2677233C00A0B5A6 /* CVFlowLayoutViewController.swift in Sources */,
 				0C488BCE2675A6CA00372188 /* HeaderCollectionReusableView.swift in Sources */,
 				0C46B4252675DB9600A0B5A6 /* CollectionViewCell.swift in Sources */,
 				0C488BBD26758C2900372188 /* BasicCollectionViewCell.swift in Sources */,
@@ -272,6 +291,7 @@
 				0C46B4162675D80900A0B5A6 /* CVInsideTVViewController.swift in Sources */,
 				0C488BD72675CD1300372188 /* GridViewCell.swift in Sources */,
 				0C488BB626758A4800372188 /* BasicCollectionViewController.swift in Sources */,
+				0C46B42E2677236100A0B5A6 /* CVCompositionalLayoutViewController.swift in Sources */,
 				0C488BDB2675CD7500372188 /* GridViewController.swift in Sources */,
 				0C488BC426759E4000372188 /* HFCollectionViewController.swift in Sources */,
 				0C488BD12675A86C00372188 /* FooterCollectionReusableView.swift in Sources */,
