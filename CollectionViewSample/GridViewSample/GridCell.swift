@@ -1,13 +1,13 @@
 //
-//  GridCollectionViewCell.swift
+//  instaCell.swift
 //  CollectionViewSample
 //
-//  Created by 野田凜太郎 on 2021/06/13.
+//  Created by 野田凜太郎 on 2021/06/14.
 //
 
 import UIKit
 
-final class GridViewCell: UICollectionViewCell {
+final class GridCell: UICollectionViewCell {
 
     static var identifier: String {
         return String(describing: self)

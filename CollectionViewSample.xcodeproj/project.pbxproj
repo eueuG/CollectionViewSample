@@ -28,6 +28,9 @@
 		0C46B42A2677233C00A0B5A6 /* CVFlowLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C46B4292677233C00A0B5A6 /* CVFlowLayoutViewController.swift */; };
 		0C46B42E2677236100A0B5A6 /* CVCompositionalLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C46B42D2677236100A0B5A6 /* CVCompositionalLayoutViewController.swift */; };
 		0C46B4322677239E00A0B5A6 /* CVCompositionalLayoutSample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C46B4312677239E00A0B5A6 /* CVCompositionalLayoutSample.storyboard */; };
+		0C46B4372677672F00A0B5A6 /* GridView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C46B4362677672F00A0B5A6 /* GridView.storyboard */; };
+		0C46B43A2677674600A0B5A6 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C46B4392677674600A0B5A6 /* GridViewController.swift */; };
+		0C46B43D2677855600A0B5A6 /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C46B43C2677855600A0B5A6 /* GridCell.swift */; };
 		0C488BB626758A4800372188 /* BasicCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C488BB526758A4800372188 /* BasicCollectionViewController.swift */; };
 		0C488BBA26758A5B00372188 /* BasicCollectionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C488BB926758A5B00372188 /* BasicCollectionView.storyboard */; };
 		0C488BBD26758C2900372188 /* BasicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C488BBC26758C2900372188 /* BasicCollectionViewCell.swift */; };
@@ -37,9 +40,6 @@
 		0C488BCB2675A31E00372188 /* HFCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C488BCA2675A31E00372188 /* HFCollectionViewCell.xib */; };
 		0C488BCE2675A6CA00372188 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C488BCD2675A6C900372188 /* HeaderCollectionReusableView.swift */; };
 		0C488BD12675A86C00372188 /* FooterCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C488BD02675A86C00372188 /* FooterCollectionReusableView.swift */; };
-		0C488BD72675CD1300372188 /* GridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C488BD62675CD1300372188 /* GridViewCell.swift */; };
-		0C488BDB2675CD7500372188 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C488BDA2675CD7500372188 /* GridViewController.swift */; };
-		0C488BDF2675CD9200372188 /* GridView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C488BDE2675CD9200372188 /* GridView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +66,9 @@
 		0C46B4292677233C00A0B5A6 /* CVFlowLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVFlowLayoutViewController.swift; sourceTree = "<group>"; };
 		0C46B42D2677236100A0B5A6 /* CVCompositionalLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVCompositionalLayoutViewController.swift; sourceTree = "<group>"; };
 		0C46B4312677239E00A0B5A6 /* CVCompositionalLayoutSample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CVCompositionalLayoutSample.storyboard; sourceTree = "<group>"; };
+		0C46B4362677672F00A0B5A6 /* GridView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GridView.storyboard; sourceTree = "<group>"; };
+		0C46B4392677674600A0B5A6 /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
+		0C46B43C2677855600A0B5A6 /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
 		0C488BB526758A4800372188 /* BasicCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCollectionViewController.swift; sourceTree = "<group>"; };
 		0C488BB926758A5B00372188 /* BasicCollectionView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BasicCollectionView.storyboard; sourceTree = "<group>"; };
 		0C488BBC26758C2900372188 /* BasicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -75,9 +78,6 @@
 		0C488BCA2675A31E00372188 /* HFCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HFCollectionViewCell.xib; sourceTree = "<group>"; };
 		0C488BCD2675A6C900372188 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		0C488BD02675A86C00372188 /* FooterCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterCollectionReusableView.swift; sourceTree = "<group>"; };
-		0C488BD62675CD1300372188 /* GridViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewCell.swift; sourceTree = "<group>"; };
-		0C488BDA2675CD7500372188 /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
-		0C488BDE2675CD9200372188 /* GridView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GridView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +120,7 @@
 				0C488BD52675CCD000372188 /* GridViewSample */,
 				0C46B4112675D73E00A0B5A6 /* CollectionViewInsideTableViewSample */,
 				0C46B428267722CE00A0B5A6 /* CVCompositionalLayoutSample */,
+				0C46B4352677655900A0B5A6 /* instagramUISample */,
 				0C041EE12674F006000F55B5 /* Assets.xcassets */,
 				0C041EE32674F006000F55B5 /* LaunchScreen.storyboard */,
 				0C041EE62674F006000F55B5 /* Info.plist */,
@@ -163,6 +164,13 @@
 			path = CVCompositionalLayoutSample;
 			sourceTree = "<group>";
 		};
+		0C46B4352677655900A0B5A6 /* instagramUISample */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = instagramUISample;
+			sourceTree = "<group>";
+		};
 		0C488BB426758A1E00372188 /* BasicCollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,9 +197,9 @@
 		0C488BD52675CCD000372188 /* GridViewSample */ = {
 			isa = PBXGroup;
 			children = (
-				0C488BDE2675CD9200372188 /* GridView.storyboard */,
-				0C488BDA2675CD7500372188 /* GridViewController.swift */,
-				0C488BD62675CD1300372188 /* GridViewCell.swift */,
+				0C46B4362677672F00A0B5A6 /* GridView.storyboard */,
+				0C46B4392677674600A0B5A6 /* GridViewController.swift */,
+				0C46B43C2677855600A0B5A6 /* GridCell.swift */,
 			);
 			path = GridViewSample;
 			sourceTree = "<group>";
@@ -256,11 +264,11 @@
 				0C041EE52674F006000F55B5 /* LaunchScreen.storyboard in Resources */,
 				0C041EFA2674FB93000F55B5 /* ColorSampleNextView.storyboard in Resources */,
 				0C46B4222675D97300A0B5A6 /* CollectionViewCell.xib in Resources */,
-				0C488BDF2675CD9200372188 /* GridView.storyboard in Resources */,
 				0C488BC126759E2800372188 /* HFCollectionView.storyboard in Resources */,
 				0C488BBA26758A5B00372188 /* BasicCollectionView.storyboard in Resources */,
 				0C46B41F2675D92A00A0B5A6 /* CollectionTableViewCell.xib in Resources */,
 				0C041EE22674F006000F55B5 /* Assets.xcassets in Resources */,
+				0C46B4372677672F00A0B5A6 /* GridView.storyboard in Resources */,
 				0C041EEE2674F68A000F55B5 /* ColorSampleView.storyboard in Resources */,
 				0C488BCB2675A31E00372188 /* HFCollectionViewCell.xib in Resources */,
 				0C46B4132675D7F500A0B5A6 /* CVInsideTVViewController.storyboard in Resources */,
@@ -285,14 +293,14 @@
 				0C041ED92674F001000F55B5 /* AppDelegate.swift in Sources */,
 				0C041EF72674F891000F55B5 /* ColorSampleCollectionViewCell.swift in Sources */,
 				0C041EF32674F6D9000F55B5 /* ColorSampleViewController.swift in Sources */,
+				0C46B43D2677855600A0B5A6 /* GridCell.swift in Sources */,
 				0C46B4192675D86500A0B5A6 /* Model.swift in Sources */,
 				0C46B41C2675D8FD00A0B5A6 /* CollectionTableViewCell.swift in Sources */,
 				0C041EDB2674F001000F55B5 /* SceneDelegate.swift in Sources */,
 				0C46B4162675D80900A0B5A6 /* CVInsideTVViewController.swift in Sources */,
-				0C488BD72675CD1300372188 /* GridViewCell.swift in Sources */,
 				0C488BB626758A4800372188 /* BasicCollectionViewController.swift in Sources */,
+				0C46B43A2677674600A0B5A6 /* GridViewController.swift in Sources */,
 				0C46B42E2677236100A0B5A6 /* CVCompositionalLayoutViewController.swift in Sources */,
-				0C488BDB2675CD7500372188 /* GridViewController.swift in Sources */,
 				0C488BC426759E4000372188 /* HFCollectionViewController.swift in Sources */,
 				0C488BD12675A86C00372188 /* FooterCollectionReusableView.swift in Sources */,
 				0C041EFD2674FC37000F55B5 /* ColorSampleNextViewController.swift in Sources */,

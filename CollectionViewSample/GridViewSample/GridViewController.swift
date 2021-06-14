@@ -1,57 +1,46 @@
 //
-//  GridViewController.swift
+//  instagramUISampleViewController.swift
 //  CollectionViewSample
 //
-//  Created by 野田凜太郎 on 2021/06/13.
+//  Created by 野田凜太郎 on 2021/06/14.
 //
+
 import UIKit
 
-final class GridViewController: UIViewController, UICollectionViewDelegate {
-
+class GridViewController: UIViewController, UICollectionViewDelegate {
+    
     @IBOutlet private weak var collectionView: UICollectionView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //collectionView.collectionViewLayout = layout()
+        
         collectionView.collectionViewLayout = UICollectionViewCompositionalLayout(
             section: gridSection()
         )
-        collectionView.register(GridViewCell.self, forCellWithReuseIdentifier: GridViewCell.identifier)
-        
-        collectionView.delegate = self
+        collectionView.register(GridCell.self,
+                                forCellWithReuseIdentifier: GridCell.identifier)
         collectionView.dataSource = self
-
     }
-    
-    private func gridSection() -> NSCollectionLayoutSection {
+}
 
+extension GridViewController {
+    private func gridSection() -> NSCollectionLayoutSection {
         let itemCount = 3
         let lineCount = itemCount - 1
-        let itemSpacing = CGFloat(2)
+        let itemSpacing = CGFloat(2) //セルの間の空間
         let itemLength = (self.view.frame.size.width - (itemSpacing * CGFloat(lineCount))) / CGFloat(itemCount)
-        //Spacingの値がlineCountの数だけ使われるので、それをViewのサイズから引いて、横並びのアイテムに長さを割り当てる
         
         
-        //一つのitem
-        let item = NSCollectionLayoutItem(
-            layoutSize: NSCollectionLayoutSize(
-                widthDimension: .absolute(itemLength),
-                heightDimension: .absolute(itemLength)
-            )
-        )
-        //itemを三つ横並びに
-        //.fractionalは親Viewとの割合
-        let items = NSCollectionLayoutGroup.horizontal(
-            layoutSize: NSCollectionLayoutSize(
-                widthDimension: .fractionalWidth(1),
-                heightDimension: .fractionalHeight(1)
-            ),
-            subitem: item,
-            count: itemCount
-        )
-        //item間のスペース
-        items.interItemSpacing = .fixed(itemSpacing)
-        //itemsが縦に並ぶグループを作成
+        //セル一個のサイズを決定
+        let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .absolute(itemLength), heightDimension: .absolute(itemLength) ))
+        
+        //itemを3個で一つのグループにしてる。グループの大きさは親Viewと同じ大きさ
+        let items = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)),subitem: item,count: itemCount)
+        items.interItemSpacing = .fixed(itemSpacing) //itemの縦線の幅を追加してる
+        
+        //3個で一つのitemsを縦に並べてます
         let groups = NSCollectionLayoutGroup.vertical(
             layoutSize: NSCollectionLayoutSize(
                 widthDimension: .fractionalWidth(1),
@@ -59,22 +48,21 @@ final class GridViewController: UIViewController, UICollectionViewDelegate {
             ),
             subitems: [items]
         )
-        //groupsからsectionを生成
+        //groups.interItemSpacing = .fixed(itemSpacing + 10)
+        
         let section = NSCollectionLayoutSection(group: groups)
-        section.interGroupSpacing = itemSpacing
+        section.interGroupSpacing = itemSpacing //itemsごとに横線のスペースができた。セクションの中のオブジェクトに対してスペースを設けるらしい
         return section
-
     }
 }
 
 extension GridViewController: UICollectionViewDataSource {
-
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 200
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GridViewCell.identifier, for: indexPath) as! GridViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GridCell.identifier, for: indexPath) as! GridCell
         return cell
     }
 
